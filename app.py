@@ -1,10 +1,14 @@
-weight = int(input('Weight: '))
-unit = input('(L)bs or (K)g: ')
+import random
+secret_number = (random.randint(1, 10))
 
-if unit.upper() == "K":
-    converted = weight * 0.45
-    print(f"You are: {converted}")
+while:
+    user_guess = int(input('Guess: '))
 
-elif unit.upper() == "L":
-    converted = weight / 0.45
-    print(f"You are: {converted}")
+    if user_guess == secret_number:
+        print("You win!")
+
+    elif user_guess <= secret_number:
+        print("Higher!")
+
+    elif user_guess >= secret_number:
+        print("Lower!")
