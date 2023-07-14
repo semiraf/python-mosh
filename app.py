@@ -1,10 +1,10 @@
-price = 1000000
-good_credit = False
+name_character = 42
 
-if good_credit == True:
-    down_payment = 0.1 * price
-    
-elif good_credit == False:
-    down_payment = 0.2 * price
+if name_character <= 3:
+    print("name must be at least 3 characters long")
 
-print(f"Down payment: ${down_payment}")
+elif name_character >= 50:
+    print("name can be a maximum of 50 characters")
+
+else:
+    print("name looks good")
