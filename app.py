@@ -7,14 +7,16 @@ while guess_count < guess_limit:
     user_guess = int(input('Guess: '))
     guess_count += 1
 
-    if user_guess == secret_number:
+    if user_guess == secret_number & guess_count < guess_limit:
         print("You win!")
-
-    elif user_guess <= secret_number:
+        break
+    
+    elif user_guess < secret_number & guess_count < guess_limit:
         print("Higher!")
 
-    elif user_guess >= secret_number:
+    elif user_guess > secret_number & guess_count < guess_limit:
         print("Lower!")
         
     elif guess_limit == guess_limit:
         print('You lose!')
+        break
