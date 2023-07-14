@@ -7,4 +7,4 @@ if good_credit == True:
 elif good_credit == False:
     down_payment = 0.2 * price
 
-print(f"Down payment: {house_price}")
+print(f"Down payment: ${down_payment}")
