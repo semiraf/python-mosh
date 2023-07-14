@@ -1,4 +1,4 @@
-house_price = 1000000
+price = 1000000
 good_credit = False
 
 if good_credit == True:
