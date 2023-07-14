@@ -2,9 +2,9 @@ price = 1000000
 good_credit = False
 
 if good_credit == True:
-    house_price = 1000000 - (1000000 / 10)
+    down_payment = 0.1 * price
     
 elif good_credit == False:
-    house_price = 1000000 - (1000000 / 20)
+    house_price = 0.2 * price
 
-print(house_price)
+print(f"Down payment: {house_price}")
