@@ -7,4 +7,4 @@ if good_credit == True:
 elif good_credit == False:
     house_price = 1000000 - (1000000 / 20)
 
-print(house_price)
+
